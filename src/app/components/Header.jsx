@@ -3,15 +3,19 @@ import Link from "next/link";
 import {
   SignInButton,
   SignUpButton,
+  SignOutButton,
   SignedIn,
   SignedOut,
   UserButton,
 } from "@clerk/nextjs";
+import headerStyles from "../styles/header.module.css";
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 export default function Header() {
   return (
-    <header className="flex items-end justify-between">
-      <div className="m-auto">
+    <header className={headerStyles.header}>
+      <div>
         <Link href={"/"}>
           <Image
             src="/assets/tinywinslogo.png"
@@ -21,14 +25,32 @@ export default function Header() {
           />
         </Link>
       </div>
-      <div>
-        <SignedOut>
-          <SignInButton className="user-btn" />
-          <SignUpButton className="user-btn" />
-        </SignedOut>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
+      <div className={headerStyles.buttons}>
+        <DropdownMenu.Root>
+          <DropdownMenu.Trigger asChild>
+            <button className="IconButton" aria-label="Menu">
+              <HamburgerMenuIcon />
+            </button>
+          </DropdownMenu.Trigger>
+
+          <DropdownMenu.Portal>
+            <DropdownMenu.Content
+              className="DropdownMenuContent"
+              alignOffset={5}
+            >
+              <DropdownMenu.Item className="DropdownMenuItem">
+                <SignedOut>
+                  <SignInButton className="user-btn" />
+                  <SignUpButton className="user-btn" />
+                </SignedOut>
+                <SignedIn>
+                  <UserButton />
+                  <SignOutButton />
+                </SignedIn>
+              </DropdownMenu.Item>
+            </DropdownMenu.Content>
+          </DropdownMenu.Portal>
+        </DropdownMenu.Root>
       </div>
     </header>
   );

@@ -1,0 +1,10 @@
+.intro_section {
+  background-color: var(--colour-light-mode-white);
+  padding: 1rem;
+}
+
+.how_it_works_section {
+  height: 100vh;
+  background-image: url("../../public/assets/illustration.jpg");
+  background-size: cover;
+}

@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 0;
+  position: relative;
+  background-color: var(--colour-light-mode-white);
+}
+
+@media (min-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+  .buttons {
+    flex-direction: row;
+    z-index: 1;
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+  }
+}
+
+/* .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+} */

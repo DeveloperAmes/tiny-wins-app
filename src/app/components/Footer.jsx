@@ -1,35 +1,33 @@
 import { PersonIcon, PlusIcon, HomeIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { auth } from "@clerk/nextjs/server";
+import footerStyles from "@/app/styles/footer.module.css";
 
 export default async function Footer({ params }) {
   const { userId } = await auth();
   return (
-    <footer className="text-center bg-[#d84057] pt-1">
-      <nav className="flex justify-between bg-white pt-2">
-        <Link
-          href={"/feed"}
-          className="flex-col items-center justify-items-center ml-10"
-        >
+    <footer className={footerStyles.footer}>
+      <nav className={footerStyles.footer_nav}>
+        <Link href={"/feed"} className={footerStyles.footer_nav_link}>
           <HomeIcon aria-label="home" className="footer-icon" />
           Home
         </Link>
         <Link
           href={`/profile/${userId}/create-post`}
-          className="flex-col items-center justify-items-center"
+          className={footerStyles.footer_nav_link}
         >
           <PlusIcon aria-label="add a new win" className="footer-icon" />
           Add Win
         </Link>
         <Link
           href={`/profile/${userId}`}
-          className="flex-col items-center justify-items-center mr-10"
+          className={footerStyles.footer_nav_link}
         >
           <PersonIcon aria-label="profile page" className="footer-icon" />
           Profile
         </Link>
       </nav>
-      <p className="text-white">DeveloperAmes &copy; 2026</p>
+      <p>DeveloperAmes &copy; 2026</p>
     </footer>
   );
 }
