@@ -1,10 +1,17 @@
 .header {
+  padding: 0 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: end;
   z-index: 0;
   position: relative;
   background-color: var(--colour-light-mode-white);
+}
+
+.hamburger {
+  width: 2.5rem;
+  height: auto;
 }
 
 @media (min-width: 768px) {

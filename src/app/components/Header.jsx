@@ -28,16 +28,13 @@ export default function Header() {
       <div className={headerStyles.buttons}>
         <DropdownMenu.Root>
           <DropdownMenu.Trigger asChild>
-            <button className="IconButton" aria-label="Menu">
-              <HamburgerMenuIcon />
+            <button className={headerStyles.dropdown_btn} aria-label="Menu">
+              <HamburgerMenuIcon className={headerStyles.hamburger} />
             </button>
           </DropdownMenu.Trigger>
 
           <DropdownMenu.Portal>
-            <DropdownMenu.Content
-              className="DropdownMenuContent"
-              alignOffset={5}
-            >
+            <DropdownMenu.Content className="DropdownMenuContent">
               <DropdownMenu.Item className="DropdownMenuItem">
                 <SignedOut>
                   <SignInButton className="user-btn" />
