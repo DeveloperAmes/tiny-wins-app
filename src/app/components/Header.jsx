@@ -34,16 +34,20 @@ export default function Header() {
           </DropdownMenu.Trigger>
 
           <DropdownMenu.Portal>
-            <DropdownMenu.Content className="DropdownMenuContent">
-              <DropdownMenu.Item className="DropdownMenuItem">
+            <DropdownMenu.Content className={headerStyles.dropdown_menu}>
+              <DropdownMenu.Item className={headerStyles.dropdown_item}>
                 <SignedOut>
                   <SignInButton className="user-btn" />
-                  <SignUpButton className="user-btn" />
                 </SignedOut>
                 <SignedIn>
                   <UserButton />
                   <SignOutButton />
                 </SignedIn>
+              </DropdownMenu.Item>
+              <DropdownMenu.Item className={headerStyles.dropdown_item}>
+                <SignedOut>
+                  <SignUpButton className="user-btn" />
+                </SignedOut>
               </DropdownMenu.Item>
             </DropdownMenu.Content>
           </DropdownMenu.Portal>

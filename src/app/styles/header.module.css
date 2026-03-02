@@ -10,8 +10,25 @@
 }
 
 .hamburger {
-  width: 2.5rem;
+  width: 50px;
   height: auto;
+}
+
+.dropdown_menu {
+  background-color: var(--colour-light-mode-white);
+  border: solid black 1px;
+  border-radius: 1rem;
+}
+
+.dropdown_item {
+  padding: 7px 16px;
+}
+
+.dropdown_item:hover,
+.dropdown_item:focus {
+  background-color: var(--colour-pinky);
+  color: var(--colour-light-mode-white);
+  border-radius: 15px;
 }
 
 @media (min-width: 768px) {
