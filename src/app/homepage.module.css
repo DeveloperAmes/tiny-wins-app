@@ -14,3 +14,7 @@
   list-style-type: circle;
   list-style-position: inside;
 }
+
+.how_it_works_heading {
+  color: var(--colour-light-mode-white);
+}

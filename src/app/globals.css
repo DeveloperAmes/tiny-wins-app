@@ -26,6 +26,11 @@ h1 {
   padding: 1.5rem 0;
 }
 
+h3 {
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+}
+
 .prof-h1 {
   background-color: var(--colour-goldy);
 }
@@ -48,10 +53,6 @@ h2 {
   font-size: 1.2rem;
 }
 
-h3 {
-  font-size: 1rem;
-}
-
 input,
 textarea {
   border: var(--colour-pinky) 2px solid;
@@ -65,7 +66,8 @@ li {
 .post-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   margin: auto;
 }
 
@@ -77,8 +79,9 @@ li {
 .post {
   background-color: var(--colour-light-mode-white);
   border-radius: 3rem;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   margin-bottom: 1rem;
+  width: 90%;
 }
 
 form {
@@ -108,15 +111,12 @@ textarea {
   background-color: var(--colour-goldy);
 }
 
-/* ################# Dialog Styles Copied From Radix-UI Site ############# */
-
 .DialogOverlay {
   width: 1rem;
   height: auto;
   background-color: var(--colour-light-mode-white);
   position: fixed;
   inset: 0;
-  /* animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1); */
 }
 
 .DialogContent {

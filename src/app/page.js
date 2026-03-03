@@ -38,7 +38,7 @@ export default function HomePage() {
         <p>Your next win is waiting...</p>
       </section>
       <section className={homepageStyles.how_it_works_section}>
-        <h3>How It Works:</h3>
+        <h3 className={homepageStyles.how_it_works_heading}>How It Works:</h3>
         <ul className="post-container">
           <li className="post">
             <Image
