@@ -1,0 +1,19 @@
+.link {
+  font-size: 0.9rem;
+}
+
+.link:hover {
+  color: var(--colour-pinky);
+}
+
+@media (min-width: 375px) {
+  .link {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .link {
+    font-size: 1.2rem;
+  }
+}

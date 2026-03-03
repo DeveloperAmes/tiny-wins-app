@@ -6,30 +6,36 @@ export default function HomePage() {
   return (
     <main>
       <section className={homepageStyles.intro_section}>
-        <Confetti />
         <h1>Welcome to Tiny Wins!</h1>
         <p>
           Tiny Wins is a community built on progress, not perfection.
           <br />
           <br /> This is a space to celebrate the small victories that often go
           unnoticed:
-          <ul>
-            <li className={homepageStyles.list_item}>
-              the workout you didn&apos;t skip
-            </li>
-            <li className={homepageStyles.list_item}>
-              the task you finally completed
-            </li>
-            <li className={homepageStyles.list_item}>
-              the habit you&apos;re building one step at a time.
-            </li>
-          </ul>
-          <br /> Share your tiny win, support others, and build real momentum
-          together.
-          <br /> <br />
-          Because when we recognize the small steps, big growth follows. Start
-          today. Your next win is waiting.
         </p>
+        <ul>
+          <li className={homepageStyles.list_item}>
+            the workout you didn&apos;t skip
+          </li>
+          <li className={homepageStyles.list_item}>
+            the task you finally completed
+          </li>
+          <li className={homepageStyles.list_item}>
+            the habit you&apos;re building one step at a time.
+          </li>
+        </ul>
+        <br />
+        <p>
+          Share your tiny win, support others, and build real momentum together.
+          <br /> <br />
+          Because when we recognize the small steps, big growth follows.
+          <br />
+        </p>
+        <br />
+        <Confetti />
+        <br />
+        <br />
+        <p>Your next win is waiting...</p>
       </section>
       <section className={homepageStyles.how_it_works_section}>
         <h3>How It Works:</h3>
