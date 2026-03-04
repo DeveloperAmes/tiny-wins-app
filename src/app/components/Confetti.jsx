@@ -52,7 +52,7 @@ export default function Confetti() {
   return (
     <Link
       href={"/sign-up"}
-      onMouseOver={handleConfetti}
+      onClick={handleConfetti}
       className={confettiStyles.link}
     >
       Start today 🎉

@@ -19,9 +19,10 @@ export default function Header() {
         <Link href={"/"}>
           <Image
             src="/assets/tinywinslogo.png"
-            width={130}
-            height={130}
+            width={100}
+            height={100}
             alt=""
+            className={headerStyles.logo}
           />
         </Link>
       </div>
