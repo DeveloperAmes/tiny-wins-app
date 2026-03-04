@@ -8,20 +8,24 @@ export default function HomePage() {
       <section className={homepageStyles.intro_section}>
         <h1>Welcome to Tiny Wins!</h1>
         <p>
-          Tiny Wins is a community built on progress, not perfection.
+          Tiny Wins is a community built on{" "}
+          <span className={homepageStyles.span}>progress</span>, not perfection.
           <br />
           <br /> This is a space to celebrate the small victories that often go
           unnoticed:
         </p>
         <ul>
           <li className={homepageStyles.list_item}>
-            the workout you didn&apos;t skip
+            the workout you{" "}
+            <span className={homepageStyles.span}>didn&apos;t skip</span>
           </li>
           <li className={homepageStyles.list_item}>
-            the task you finally completed
+            the task you <span className={homepageStyles.span}>finally</span>{" "}
+            completed
           </li>
           <li className={homepageStyles.list_item}>
-            the habit you&apos;re building one step at a time.
+            the habit you&apos;re building{" "}
+            <span className={homepageStyles.span}>one step at a time.</span>
           </li>
         </ul>
         <br />
@@ -32,13 +36,15 @@ export default function HomePage() {
           <br />
         </p>
         <br />
-        <Confetti />
+        <span className={homepageStyles.span}>
+          <Confetti />
+        </span>
         <br />
         <br />
         <p>Your next win is waiting...</p>
       </section>
       <section className={homepageStyles.how_it_works_section}>
-        <h3 className={homepageStyles.how_it_works_heading}>How It Works:</h3>
+        <h2 className={homepageStyles.how_it_works_heading}>How It Works:</h2>
         <ul className="post-container">
           <li className="post">
             <Image

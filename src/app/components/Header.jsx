@@ -21,8 +21,9 @@ export default function Header() {
             src="/assets/tinywinslogo.png"
             width={100}
             height={100}
-            alt=""
+            alt="Tiny wins logo."
             className={headerStyles.logo}
+            aria-label="Return to homepage"
           />
         </Link>
       </div>

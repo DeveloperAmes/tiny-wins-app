@@ -4,7 +4,8 @@
   --colour-light-mode-white: #f2eeee;
   --colour-dark-mode-bg: #3e2733;
   --colour-pinky: #a83446;
-  --colour-goldy: #e9ae2d;
+  --colour-goldy: #d99e72;
+  --colour-peachy: #df8167;
 }
 
 body {
@@ -12,12 +13,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.footer-icon {
-  color: var(--colour-pinky);
-  width: 2.5rem;
-  height: auto;
 }
 
 h1 {

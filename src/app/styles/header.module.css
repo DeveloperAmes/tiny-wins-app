@@ -14,20 +14,20 @@
     var(--colour-light-mode-white),
     var(--colour-light-mode-white)
   );
-  background-size: 110%;
+  background-size: 150%;
   background-repeat: no-repeat;
   animation: bg-animation 5s infinite;
 }
 
 @keyframes bg-animation {
   0% {
-    background-position: left;
-  }
-  50% {
     background-position: right;
   }
-  100% {
+  50% {
     background-position: left;
+  }
+  100% {
+    background-position: right;
   }
 }
 
@@ -44,6 +44,7 @@
 
 .dropdown_item {
   padding: 7px 16px;
+  font-size: 0.9rem;
 }
 
 .dropdown_item:hover,

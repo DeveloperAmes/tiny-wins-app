@@ -14,7 +14,14 @@
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer_icon {
+  color: var(--colour-pinky);
+  width: 1.5rem;
+  height: auto;
 }
 
 @media (min-width: 768px) {

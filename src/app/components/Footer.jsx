@@ -9,21 +9,27 @@ export default async function Footer({ params }) {
     <footer className={footerStyles.footer}>
       <nav className={footerStyles.footer_nav}>
         <Link href={"/feed"} className={footerStyles.footer_nav_link}>
-          <HomeIcon aria-label="home" className="footer-icon" />
+          <HomeIcon aria-label="home" className={footerStyles.footer_icon} />
           Home
         </Link>
         <Link
           href={`/profile/${userId}/create-post`}
           className={footerStyles.footer_nav_link}
         >
-          <PlusIcon aria-label="add a new win" className="footer-icon" />
+          <PlusIcon
+            aria-label="add a new win"
+            className={footerStyles.footer_icon}
+          />
           Add Win
         </Link>
         <Link
           href={`/profile/${userId}`}
           className={footerStyles.footer_nav_link}
         >
-          <PersonIcon aria-label="profile page" className="footer-icon" />
+          <PersonIcon
+            aria-label="profile page"
+            className={footerStyles.footer_icon}
+          />
           Profile
         </Link>
       </nav>

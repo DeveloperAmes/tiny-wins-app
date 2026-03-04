@@ -6,8 +6,12 @@
 
 .how_it_works_section {
   height: 100vh;
-  background-image: url("../../public/assets/illustration.jpg");
-  background-size: cover;
+  background-image: url("../../public/assets/illustration.webp");
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .list_item {
@@ -17,4 +21,9 @@
 
 .how_it_works_heading {
   color: var(--colour-light-mode-white);
+  padding-top: 1rem;
+}
+
+.span {
+  color: var(--colour-pinky);
 }
