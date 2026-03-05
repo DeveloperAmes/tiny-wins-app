@@ -19,6 +19,7 @@ h1 {
   font-size: 1.3rem;
   color: var(--colour-pinky);
   padding: 1.5rem 0;
+  font-weight: bold;
 }
 
 h3 {
@@ -63,7 +64,6 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
 }
 
 .bio-container {
@@ -73,10 +73,9 @@ li {
 
 .post {
   background-color: var(--colour-light-mode-white);
-  border-radius: 3rem;
+  border-radius: 2rem;
   padding: 0.5rem 1.5rem;
   margin-bottom: 1rem;
-  width: 90%;
 }
 
 form {

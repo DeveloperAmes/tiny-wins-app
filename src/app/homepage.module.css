@@ -1,17 +1,21 @@
 .intro_section {
   background-color: var(--colour-light-mode-white);
-  padding: 0 2rem 2rem 2rem;
+  padding: 0 3rem 3rem 3rem;
   text-align: left;
 }
 
+.hero_image {
+  display: none;
+}
+
 .how_it_works_section {
-  height: 100vh;
   background-image: url("../../public/assets/illustration.webp");
   background-size: auto;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 0 3rem 1rem 3rem;
 }
 
 .list_item {
@@ -21,9 +25,19 @@
 
 .how_it_works_heading {
   color: var(--colour-light-mode-white);
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
 .span {
   color: var(--colour-pinky);
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .intro_section {
+    display: flex;
+  }
+  .hero_image {
+    display: block;
+  }
 }

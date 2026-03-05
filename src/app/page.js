@@ -6,46 +6,58 @@ export default function HomePage() {
   return (
     <main>
       <section className={homepageStyles.intro_section}>
-        <h1>Welcome to Tiny Wins!</h1>
-        <p>
-          Tiny Wins is a community built on{" "}
-          <span className={homepageStyles.span}>progress</span>, not perfection.
+        <div className={homepageStyles.textSection}>
+          <h1>
+            Welcome to Tiny Wins - a community built on progress, not
+            perfection.
+          </h1>
+          <p>
+            This is a space to celebrate the small victories that often go
+            unnoticed:
+          </p>
+          <ul>
+            <li className={homepageStyles.list_item}>
+              the workout you{" "}
+              <span className={homepageStyles.span}>didn&apos;t skip</span>
+            </li>
+            <li className={homepageStyles.list_item}>
+              the task you <span className={homepageStyles.span}>finally</span>{" "}
+              completed
+            </li>
+            <li className={homepageStyles.list_item}>
+              the habit you&apos;re building{" "}
+              <span className={homepageStyles.span}>one step at a time.</span>
+            </li>
+          </ul>
           <br />
-          <br /> This is a space to celebrate the small victories that often go
-          unnoticed:
-        </p>
-        <ul>
-          <li className={homepageStyles.list_item}>
-            the workout you{" "}
-            <span className={homepageStyles.span}>didn&apos;t skip</span>
-          </li>
-          <li className={homepageStyles.list_item}>
-            the task you <span className={homepageStyles.span}>finally</span>{" "}
-            completed
-          </li>
-          <li className={homepageStyles.list_item}>
-            the habit you&apos;re building{" "}
-            <span className={homepageStyles.span}>one step at a time.</span>
-          </li>
-        </ul>
-        <br />
-        <p>
-          Share your tiny win, support others, and build real momentum together.
-          <br /> <br />
-          Because when we recognize the small steps, big growth follows.
+          <p>
+            Share your tiny win, support others, and build real momentum
+            together.
+            <br /> <br />
+            Because when we recognize the small steps, big growth follows.
+            <br />
+          </p>
           <br />
-        </p>
-        <br />
-        <span className={homepageStyles.span}>
-          <Confetti />
-        </span>
-        <br />
-        <br />
-        <p>Your next win is waiting...</p>
+          <span className={homepageStyles.span}>
+            <Confetti />
+          </span>
+          <br />
+          <br />
+          <p>Your next win is waiting...</p>
+        </div>
+        <div className={homepageStyles.imageSection}>
+          <Image
+            src="/assets/TinyWinsPhoneAppFinal.png"
+            alt="A mobile phone displaying the Tiny Wins App."
+            width={300}
+            height={600}
+            className={homepageStyles.hero_image}
+          />
+        </div>
       </section>
       <section className={homepageStyles.how_it_works_section}>
         <h2 className={homepageStyles.how_it_works_heading}>How It Works:</h2>
-        <ul className="post-container">
+        <ul>
           <li className="post">
             <Image
               src="/assets/flameicon.png"

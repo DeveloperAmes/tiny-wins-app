@@ -1,4 +1,4 @@
-import { PersonIcon, PlusIcon, HomeIcon } from "@radix-ui/react-icons";
+import { PersonIcon, PlusIcon, FileTextIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { auth } from "@clerk/nextjs/server";
 import footerStyles from "@/app/styles/footer.module.css";
@@ -9,8 +9,11 @@ export default async function Footer({ params }) {
     <footer className={footerStyles.footer}>
       <nav className={footerStyles.footer_nav}>
         <Link href={"/feed"} className={footerStyles.footer_nav_link}>
-          <HomeIcon aria-label="home" className={footerStyles.footer_icon} />
-          Home
+          <FileTextIcon
+            aria-label="feed"
+            className={footerStyles.footer_icon}
+          />
+          Feed
         </Link>
         <Link
           href={`/profile/${userId}/create-post`}

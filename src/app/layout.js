@@ -1,11 +1,10 @@
 import { ClerkProvider } from "@clerk/nextjs";
-import { M_PLUS_Rounded_1c } from "next/font/google";
+import { Asap } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-const mainFont = M_PLUS_Rounded_1c({
-  weight: "700",
+const mainFont = Asap({
   subsets: ["latin"],
 });
 
