@@ -176,6 +176,13 @@ textarea {
   }
 }
 
+@media (min-width: 500px) {
+  .post {
+    margin: 0 1rem;
+    min-width: 15rem;
+  }
+}
+
 @media (min-width: 768px) {
   .post-container,
   .bio-container {

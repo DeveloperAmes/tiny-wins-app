@@ -57,7 +57,7 @@ export default function HomePage() {
       </section>
       <section className={homepageStyles.how_it_works_section}>
         <h2 className={homepageStyles.how_it_works_heading}>How It Works:</h2>
-        <ul>
+        <ul className={homepageStyles.how_it_works_container}>
           <li className="post">
             <Image
               src="/assets/flameicon.png"
