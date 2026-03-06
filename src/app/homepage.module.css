@@ -29,6 +29,7 @@
 .how_it_works_heading {
   color: var(--colour-light-mode-white);
   padding: 1rem;
+  font-weight: bold;
 }
 
 .span {
@@ -39,6 +40,8 @@
 @media (min-width: 500px) {
   .intro_section {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .hero_image {
     display: block;
@@ -48,5 +51,8 @@
   .how_it_works_container {
     flex-direction: row;
     overflow-x: auto;
+    padding-bottom: 1rem;
+    scrollbar-color: var(--colour-light-mode-white) transparent;
+    scrollbar-width: thin;
   }
 }

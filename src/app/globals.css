@@ -180,6 +180,7 @@ textarea {
   .post {
     margin: 0 1rem;
     min-width: 15rem;
+    max-width: 22rem;
   }
 }
 
