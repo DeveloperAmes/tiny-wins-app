@@ -9,6 +9,10 @@
   background-color: var(--colour-light-mode-white);
 }
 
+.header_nav {
+  display: none;
+}
+
 .hamburger {
   width: 30px;
   height: auto;
@@ -17,7 +21,7 @@
 .dropdown_menu {
   background-color: var(--colour-light-mode-white);
   border: solid black 1px;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
 }
 
 .dropdown_item {
@@ -29,12 +33,20 @@
 .dropdown_item:focus {
   background-color: var(--colour-pinky);
   color: var(--colour-light-mode-white);
-  border-radius: 15px;
 }
 
-@media (min-width: 768px) {
-  .header {
-    justify-content: center;
+@media (min-width: 500px) {
+  .logo {
+    height: 7rem;
+    width: auto;
+  }
+  .header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hamburger {
+    display: none;
   }
   .buttons {
     flex-direction: row;

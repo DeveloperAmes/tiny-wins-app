@@ -27,6 +27,18 @@ export default function Header() {
           />
         </Link>
       </div>
+      <nav className={headerStyles.header_nav}>
+        <SignedOut>
+          <SignInButton className="user-btn" />
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+          <SignOutButton />
+        </SignedIn>
+        <SignedOut>
+          <SignUpButton className="user-btn" />
+        </SignedOut>
+      </nav>
       <div className={headerStyles.buttons}>
         <DropdownMenu.Root>
           <DropdownMenu.Trigger asChild>
@@ -46,6 +58,7 @@ export default function Header() {
                   <SignOutButton />
                 </SignedIn>
               </DropdownMenu.Item>
+              <hr />
               <DropdownMenu.Item className={headerStyles.dropdown_item}>
                 <SignedOut>
                   <SignUpButton className="user-btn" />

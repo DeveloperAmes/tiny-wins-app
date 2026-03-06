@@ -54,11 +54,6 @@ textarea {
   border: var(--colour-pinky) 2px solid;
 }
 
-p,
-li {
-  font-size: 0.9rem;
-}
-
 .post-container {
   display: flex;
   flex-direction: column;
@@ -188,9 +183,6 @@ textarea {
   .post-container,
   .bio-container {
     width: 40rem;
-  }
-  p {
-    font-size: 1.2rem;
   }
   h1 {
     font-size: 1.5rem;

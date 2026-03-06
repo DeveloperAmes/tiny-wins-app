@@ -58,7 +58,7 @@ export default function HomePage() {
       <section className={homepageStyles.how_it_works_section}>
         <h2 className={homepageStyles.how_it_works_heading}>How It Works:</h2>
         <ul className={homepageStyles.how_it_works_container}>
-          <li className="post">
+          <li className={homepageStyles.how_it_works_card}>
             <Image
               src="/assets/flameicon.png"
               alt=""
@@ -69,7 +69,7 @@ export default function HomePage() {
             Create a profile and add your small wins each day. You can share
             more than one a day if you like!
           </li>
-          <li className="post">
+          <li className={homepageStyles.how_it_works_card}>
             <Image
               src="/assets/flameicon.png"
               alt=""
@@ -80,7 +80,7 @@ export default function HomePage() {
             Your small wins are added to the main feed so others can see what
             you have posted and celebrate with you too!
           </li>
-          <li className="post">
+          <li className={homepageStyles.how_it_works_card}>
             <Image
               src="/assets/flameicon.png"
               alt=""

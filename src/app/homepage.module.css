@@ -37,6 +37,13 @@
   font-weight: bold;
 }
 
+.how_it_works_card {
+  background-color: var(--colour-light-mode-white);
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 500px) {
   .intro_section {
     display: flex;
@@ -51,8 +58,13 @@
   .how_it_works_container {
     flex-direction: row;
     overflow-x: auto;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     scrollbar-color: var(--colour-light-mode-white) transparent;
     scrollbar-width: thin;
+  }
+  .how_it_works_card {
+    margin: 0 1rem;
+    min-width: 15rem;
+    max-width: 22rem;
   }
 }

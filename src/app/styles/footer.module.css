@@ -15,7 +15,6 @@
   align-items: center;
   justify-items: center;
   padding: 1rem;
-  font-size: 0.9rem;
 }
 
 .footer_icon {
@@ -25,4 +24,13 @@
 }
 
 @media (min-width: 768px) {
+  .footer_nav {
+    padding: 0 3rem;
+  }
+  .footer_nav_link {
+    font-size: 1.2rem;
+  }
+  .footer_icon {
+    width: 2.2rem;
+  }
 }
