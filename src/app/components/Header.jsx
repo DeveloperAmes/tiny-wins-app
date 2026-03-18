@@ -29,14 +29,14 @@ export default function Header() {
       </div>
       <nav className={headerStyles.header_nav}>
         <SignedOut>
-          <SignInButton className="user-btn" />
+          <SignInButton className={headerStyles.widescreen_user_button} />
         </SignedOut>
         <SignedIn>
           <UserButton />
-          <SignOutButton />
+          <SignOutButton className={headerStyles.widescreen_user_button} />
         </SignedIn>
         <SignedOut>
-          <SignUpButton className="user-btn" />
+          <SignUpButton className={headerStyles.widescreen_user_button} />
         </SignedOut>
       </nav>
       <div className={headerStyles.buttons}>
@@ -51,7 +51,7 @@ export default function Header() {
             <DropdownMenu.Content className={headerStyles.dropdown_menu}>
               <DropdownMenu.Item className={headerStyles.dropdown_item}>
                 <SignedOut>
-                  <SignInButton className="user-btn" />
+                  <SignInButton />
                 </SignedOut>
                 <SignedIn>
                   <UserButton />
@@ -61,7 +61,7 @@ export default function Header() {
               <hr />
               <DropdownMenu.Item className={headerStyles.dropdown_item}>
                 <SignedOut>
-                  <SignUpButton className="user-btn" />
+                  <SignUpButton />
                 </SignedOut>
               </DropdownMenu.Item>
             </DropdownMenu.Content>

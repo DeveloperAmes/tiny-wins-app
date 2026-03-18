@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{ theme: "simple" }}>
       <html lang="en">
         <body
           className={`${mainFont.className} flex-col text-center min-h-screen`}

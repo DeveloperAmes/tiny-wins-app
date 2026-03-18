@@ -52,8 +52,7 @@
   }
   .hero_image {
     display: block;
-    margin: 2rem;
-    min-height: 10rem;
+    min-height: 11rem;
   }
   .how_it_works_container {
     flex-direction: row;

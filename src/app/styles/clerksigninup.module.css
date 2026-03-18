@@ -1,0 +1,29 @@
+.cl-signIn-start,
+.cl-signUp-start,
+.cl-lastAuthenticationStrategyBadge {
+  border: 1px solid black;
+}
+
+.cl-headerTitle {
+  color: var(--colour-pinky);
+}
+
+.cl-headerSubtitle,
+.cl-dividerText,
+.cl-lastAuthenticationStrategyBadge,
+.cl-socialButtonsBlockButtonText {
+  color: black;
+}
+
+.cl-socialButtonsRoot,
+.cl-input,
+.cl-input:hover,
+.cl-input:focus {
+  color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.cl-dividerLine {
+  background-color: black;
+}

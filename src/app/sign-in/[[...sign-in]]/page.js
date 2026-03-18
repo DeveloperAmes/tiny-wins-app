@@ -1,11 +1,11 @@
 import { SignIn } from "@clerk/nextjs";
+import signInStyles from "@/app/styles/clerksigninup.module.css";
 
 export default function SignInPage() {
   return (
     <main>
-      <h1>Sign In</h1>
       <section className="flex justify-center mb-4">
-        <SignIn />
+        <SignIn className={signInStyles} />
       </section>
     </main>
   );

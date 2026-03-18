@@ -49,8 +49,8 @@ export default function HomePage() {
           <Image
             src="/assets/TinyWinsPhoneAppFinal.png"
             alt="A mobile phone displaying the Tiny Wins App."
-            width={300}
-            height={600}
+            width={239}
+            height={362}
             className={homepageStyles.hero_image}
           />
         </div>

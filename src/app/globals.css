@@ -13,6 +13,37 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--colour-light-mode-white);
+}
+
+.cl-signIn-start,
+.cl-lastAuthenticationStrategyBadge {
+  background-color: var(--colour-light-mode-white);
+  border: 1px solid black;
+}
+
+.cl-headerTitle {
+  color: var(--colour-pinky);
+}
+
+.cl-headerSubtitle,
+.cl-dividerText,
+.cl-lastAuthenticationStrategyBadge,
+.cl-socialButtonsBlockButtonText {
+  color: black;
+}
+
+.cl-socialButtonsRoot,
+.cl-input,
+.cl-input:hover,
+.cl-input:focus {
+  color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.cl-dividerLine {
+  background-color: black;
 }
 
 h1 {
@@ -87,8 +118,10 @@ textarea {
   width: 20rem;
 }
 
-.form-btn {
+.form-btn,
+.cl-formButtonPrimary {
   background-color: var(--colour-pinky);
+  color: var(--colour-light-mode-white);
   max-width: 8rem;
   padding: 0.5rem 0.7rem;
   border-radius: 6px;
@@ -96,7 +129,9 @@ textarea {
   margin-left: 0.5rem;
 }
 
-.form-btn:hover {
+.form-btn:hover,
+.cl-formButtonPrimary:hover,
+.cl-formButtonPrimary:focus {
   background-color: var(--colour-goldy);
 }
 
