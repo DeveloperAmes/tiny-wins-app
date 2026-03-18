@@ -17,19 +17,21 @@ body {
 }
 
 .cl-signIn-start,
+.cl-signUp-start,
 .cl-lastAuthenticationStrategyBadge {
-  background-color: var(--colour-light-mode-white);
   border: 1px solid black;
 }
 
-.cl-headerTitle {
+.cl-headerTitle,
+.cl-footerActionLink {
   color: var(--colour-pinky);
 }
 
 .cl-headerSubtitle,
 .cl-dividerText,
 .cl-lastAuthenticationStrategyBadge,
-.cl-socialButtonsBlockButtonText {
+.cl-socialButtonsBlockButtonText,
+.cl-footerActionText {
   color: black;
 }
 
@@ -44,6 +46,10 @@ body {
 
 .cl-dividerLine {
   background-color: black;
+}
+
+.cl-signIn-root {
+  background-color: white;
 }
 
 h1 {
@@ -72,7 +78,9 @@ h3 {
 
 .amenddb-icon:hover,
 .close-icon:hover,
-.like-icon:hover {
+.like-icon:hover,
+.cl-footerActionLink:hover,
+.cl-footerActionLink:focus {
   color: var(--colour-goldy);
 }
 
@@ -133,6 +141,7 @@ textarea {
 .cl-formButtonPrimary:hover,
 .cl-formButtonPrimary:focus {
   background-color: var(--colour-goldy);
+  color: black;
 }
 
 .DialogOverlay {
