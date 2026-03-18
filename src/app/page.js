@@ -44,6 +44,13 @@ export default function HomePage() {
           <br />
           <br />
           <p>Your next win is waiting...</p>
+          <Image
+            src="/assets/blonde1.png"
+            alt="blonde woman celebrating with a big smile and a fist pump"
+            width={300}
+            height={300}
+            className={homepageStyles.person_img}
+          />
         </div>
         <div className={homepageStyles.imageSection}>
           <Image
