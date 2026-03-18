@@ -139,7 +139,9 @@ textarea {
 
 .form-btn:hover,
 .cl-formButtonPrimary:hover,
-.cl-formButtonPrimary:focus {
+.cl-formButtonPrimary:focus,
+.cl-socialButtonsBlockButton:hover,
+.cl-socialButtonsBlockButton:focus {
   background-color: var(--colour-goldy);
   color: black;
 }
