@@ -39,12 +39,12 @@ export default function Confetti() {
       spread: 360,
       origin: { y: 0.3, x: 0 },
       colors: [
-        "#B77A75",
-        "#A05152",
-        "#9e303F",
-        "#B95955",
-        "#CF7D63",
-        "#D99A73",
+        "#98021B",
+        "#C11B29",
+        "#BD3C72",
+        "#E3A862",
+        "#FD7A61",
+        "#EC5464",
       ],
       startVelocity: 25,
     });

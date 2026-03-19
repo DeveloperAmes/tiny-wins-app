@@ -2,10 +2,9 @@
 
 :root {
   --colour-light-mode-white: #f2eeee;
-  --colour-dark-mode-bg: #3e2733;
-  --colour-pinky: #a83446;
-  --colour-goldy: #d99e72;
-  --colour-peachy: #df8167;
+  --colour-dark-mode-bg: #89000e;
+  --colour-pinky: #c11b29;
+  --colour-goldy: #e3a862;
 }
 
 body {
@@ -124,6 +123,11 @@ input,
 textarea {
   margin: auto;
   width: 20rem;
+}
+
+p,
+li {
+  line-height: 210%;
 }
 
 .form-btn,

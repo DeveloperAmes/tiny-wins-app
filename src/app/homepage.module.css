@@ -2,6 +2,7 @@
   background-color: var(--colour-light-mode-white);
   padding: 0 3rem 0 3rem;
   text-align: left;
+  margin-bottom: 1.5rem;
 }
 
 .hero_image {
@@ -9,12 +10,12 @@
 }
 
 .person_img {
-  height: 30vh;
+  height: 20vh;
   width: auto;
 }
 
 .how_it_works_section {
-  background-image: url("../../public/assets/illustration.webp");
+  background-image: url("../../public/assets/red-background-with-confetti.jpg");
   background-size: auto;
   background-repeat: no-repeat;
   padding: 0 3rem 1rem 3rem;
@@ -24,6 +25,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.people_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colour-pinky);
+  border-radius: 8px;
+  padding-top: 1rem;
+  max-width: 15rem;
+  margin: 1.5rem 0;
 }
 
 .list_item {
@@ -69,6 +83,12 @@
   .how_it_works_card {
     margin: 0 1rem;
     min-width: 15rem;
+    max-width: 22rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .people_div {
     max-width: 22rem;
   }
 }

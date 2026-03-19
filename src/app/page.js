@@ -29,7 +29,22 @@ export default function HomePage() {
               <span className={homepageStyles.span}>one step at a time.</span>
             </li>
           </ul>
-          <br />
+          <div className={homepageStyles.people_div}>
+            <Image
+              src="/assets/blonde1.png"
+              alt="blonde woman celebrating with a big smile and a fist pump"
+              width={300}
+              height={300}
+              className={homepageStyles.person_img}
+            />
+            <Image
+              src="/assets/2peopledancing.png"
+              alt="two people dancing and smiling"
+              width={300}
+              height={300}
+              className={homepageStyles.person_img}
+            />
+          </div>
           <p>
             Share your tiny win, support others, and build real momentum
             together.
@@ -44,13 +59,6 @@ export default function HomePage() {
           <br />
           <br />
           <p>Your next win is waiting...</p>
-          <Image
-            src="/assets/blonde1.png"
-            alt="blonde woman celebrating with a big smile and a fist pump"
-            width={300}
-            height={300}
-            className={homepageStyles.person_img}
-          />
         </div>
         <div className={homepageStyles.imageSection}>
           <Image
